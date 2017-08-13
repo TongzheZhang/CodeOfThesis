@@ -1,0 +1,8 @@
+THULAC：一个高效的中文词法分析工具包，这里并未使用，只是作为一个小例子
+获取自己的新闻财经词库。最终为了得到final_corpus.txt
+news文件夹里是不同股票的新闻，都在这里存放。
+corpus_for_finance.txt是从网上找到的一个很大的财经类词库，大约有1万多个词。
+get_news_together.py（输出refertext.txt in to_build_corpus）把抓取的不同公司的新闻合并成一个文本文件，供后续使用，仅合成了新闻标题和内容，未使用股民回馈内容
+build_news_wordlist.py(输出wordlist_of_news.txt)构建财经新闻的词列表要求这个词出现三次以上，我们这里用的是五个公司的一年的新闻，可以根据新闻库的大小调节个数
+build_final_corpus.py(输出final_corpus.txt)综合大财经词库和新闻的词列表，得到重合部分，即最终的我们的财经词库。
+
